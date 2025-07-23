@@ -18,15 +18,60 @@
         color: white;
         text-align: center;
         padding: 16px;
-        text-decoration:none;
-        font-size:medium;
+        text-decoration:underline;
+        font-size:larger;
         font-weight: bold;
+      }
+      .div1{
+        width: auto; 
+        height: auto; 
+        background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+      }
+      .div2{
+        width: auto; 
+        height:auto; 
+        background-color: black; 
+        color: white;
+      }
+      img{
+        width: calc(100% - 100px);
+        height: auto;
+      }
+      h1{
+        font-size: 50px;
+      }
+      h3{
+        font-size: xx-large;
+        max-width: calc(100% - 100px);
+      }
+      @media only screen and (max-width:1000px){
+        li a{
+          display: block;
+          text-decoration: underline;
+          justify-content:center;
+          font-size: xx-large;
+        }
+        li{
+          float: none;
+          margin: auto;
+          padding: 1%;
+        }
+        img{
+            width: 90%;
+            height: auto;
+        }   
+        .div2{
+            height: 5%;
+        }
+        .div1{
+            height: max-content;
+        }
       }
     </style>
   </head>
   <body>
-    <div style="width: auto; height: auto; background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);" align="center">
-    <h1 id="Label1" style="text-decoration:underline; Color: White;">Seven Woneders of the World</h1>
+    <div class="div1" align="center">
+    <h1 id="Label1" style="font-style: italic; Color: White;">Seven Woneders of the World</h1>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -40,27 +85,16 @@
       </ul>
     </nav>
     <br>
-    <table style="width: 100%;">
-      <th colspan="2" align="center" style="font-size: x-large; font-weight: bold; font-style: normal; font-family: Algerian; color: #800000">
-         <br />
-         Chichén Itzá
-      </th>
-      <tr>
-          <td>
-              <font color="navy" size="5" face="Andalus">Chichén Itzá is a Mayan city on the Yucatán Peninsula in Mexico, which flourished in the 9th and 10th centuries CE. Under the Mayan tribe Itzá—who were strongly influenced by the Toltecs—a number of important monuments and temples were built. Among the most notable is the stepped pyramid El Castillo (“The Castle”), which rises 79 feet (24 meters) above the Main Plaza. A testament to the Mayans’ astronomical abilities, the structure features a total of 365 steps, the number of days in the solar year. During the spring and autumnal equinoxes, the setting sun casts shadows on the pyramid that give the appearance of a serpent slithering down the north stairway at the base is a stone snake head.</font>
-          </td>
-          <td>
-             <img src="https://cdn.britannica.com/49/61349-050-9FFBEB28/El-Castillo-pyramid-plaza-Toltec-state-Yucatan.jpg?w=1000" width="500" height="350" />
-          </td>
-      </tr>
-  </table>
+    <h1 align="center" style="font-weight: bold; font-style: normal; font-family: Algerian; color: #800000">Chichén Itzá</h1>
+    <h3><font color="navy" face="Andalus">Chichén Itzá is a Mayan city on the Yucatán Peninsula in Mexico, which flourished in the 9th and 10th centuries CE. Under the Mayan tribe Itzá—who were strongly influenced by the Toltecs—a number of important monuments and temples were built. Among the most notable is the stepped pyramid El Castillo (“The Castle”), which rises 79 feet (24 meters) above the Main Plaza. A testament to the Mayans’ astronomical abilities, the structure features a total of 365 steps, the number of days in the solar year. During the spring and autumnal equinoxes, the setting sun casts shadows on the pyramid that give the appearance of a serpent slithering down the north stairway at the base is a stone snake head.</font></h3>
+    <img src="https://cdn.britannica.com/49/61349-050-9FFBEB28/El-Castillo-pyramid-plaza-Toltec-state-Yucatan.jpg?w=1000" />
     <br><br>  
   </div>
-    <div style="width: auto; height:auto; background-color: black; color: white;" align="left">
+    <div class="div2" align="left">
       <br>
       Seven Wonders of the World <br>
       &copy SHABBIR JALGUNWALA<br>
-      Contact Us:shabbirjalgunwala@gmail.com
+      Contact Us: shabbirjalgunwala@gmail.com
       <br><br>
     </div>
   </body>
