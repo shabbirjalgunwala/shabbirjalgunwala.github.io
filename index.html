@@ -22,10 +22,41 @@
         font-size:medium;
         font-weight: bold;
       }
+      .div1{
+        width: auto; 
+        height: auto; 
+        background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+      }
+      .div2{
+        width: auto; 
+        height:auto; 
+        background-color: black; 
+        color: white;
+      }
+      @media only screen and (max-width: 1000px){
+        li a{
+          display: contents;
+          justify-content:center;
+          font-size: xx-large;
+        }
+        li{
+          float: none;
+          margin: auto;
+          padding: 3%;
+        }
+        .div1{
+          height:95%;
+          width: auto;
+        }
+        .div2{
+          height: 5%;
+          width: auto;
+        }
+      }
     </style>
   </head>
   <body>
-    <div style="width: auto; height: auto; background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);" align="center">
+    <div class="div1" align="center">
     <h1 id="Label1" style="text-decoration:underline; Color: White;">Seven Woneders of the World</h1>
     <nav>
       <ul>
@@ -43,7 +74,7 @@
     <img src="https://i.ibb.co/4nYW5Ky3/Picture1.png" alt="Seven Wonders of the World" border="0" width="auto" height="600"/>
     <br><br>  
   </div>
-    <div style="width: auto; height:auto; background-color: black; color: white;" align="left">
+    <div class="div2" align="left">
       <br>
       Seven Wonders of the World <br>
       &copy SHABBIR JALGUNWALA<br>
